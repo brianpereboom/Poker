@@ -16,7 +16,7 @@ class Table : public Dealer, public Bot {
         int pot;
 
         Table();
-        ~Table() {
+        ~Table() override {
             for (int i = 0; i < this->opponents.size(); i++)
                 delete this->opponents[i];
             free(board);
