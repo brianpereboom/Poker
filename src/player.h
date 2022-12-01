@@ -9,6 +9,7 @@ class Player {
         bool folded;
 
         Player();
+        virtual ~Player(){}
 
         void buyBackIn();
         int option(int toCall);
