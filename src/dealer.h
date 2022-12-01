@@ -29,6 +29,7 @@ class Dealer {
         std::vector<int> deck;
 
         Dealer();
+        virtual ~Dealer(){}
 
         void shuffle();
         int dealCard();
