@@ -17,7 +17,7 @@ class Bot : public Player {
 
     public:
         Bot() {}
-        ~Bot() {
+        virtual ~Bot() {
             delete this->potPtr;
             delete this->stackPtrs;
             delete this->betPtrs;
